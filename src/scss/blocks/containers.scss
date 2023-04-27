@@ -1,0 +1,45 @@
+@use "../mixins/responsive.scss" as *;
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include responsive(laptop) {
+    flex-direction: row;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  @include responsive(laptop) {
+    margin: 5rem;
+  }
+
+  &__icon {
+    max-width: 1.5rem;
+    @include responsive(laptop) {
+      max-width: 4rem;
+    }
+  }
+  &__number {
+    font-size: 3rem;
+    font-weight: bolder;
+    @include responsive(laptop) {
+      font-size: 6rem;
+    }
+  }
+  &__title {
+    color: #808e9a;
+    font-size: 0.9rem;
+
+    @include responsive(laptop) {
+      font-size: 1.4rem;
+    }
+  }
+}

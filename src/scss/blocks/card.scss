@@ -1,0 +1,80 @@
+@use "../mixins/responsive.scss" as *;
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  @include responsive(laptop) {
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 5rem;
+    text-align: left;
+    background-image: url(assets/images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+
+    background-size: contain;
+  }
+
+  .__titles {
+    color: #00252e;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    @include responsive(laptop) {
+    }
+  }
+  .__text {
+    color: #00252e;
+  }
+  .__content {
+    display: flex;
+    flex-direction: column;
+    @include responsive(laptop) {
+      flex-direction: column;
+    }
+  }
+}
+
+.cardfinal {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  @include responsive(laptop) {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  &__button {
+    height: 40px;
+    width: 200px;
+    background-color: #ff52c1;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+    font-weight: bold;
+    border-radius: 2rem;
+
+    @include responsive(laptop) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1.7rem;
+      font-size: 1.3rem;
+      width: 400px;
+      height: 80px;
+    }
+  }
+}

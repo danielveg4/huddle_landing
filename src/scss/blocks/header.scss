@@ -1,1 +1,117 @@
 @use "../mixins/responsive.scss" as *;
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 65px;
+  width: 343px;
+  color: black;
+
+  @include responsive(laptop) {
+    width: 1343px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+.logo {
+  max-width: 50%;
+  max-height: 50%;
+  position: relative;
+  top: 0.8rem;
+  @include responsive(laptop) {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  @include responsive(laptop) {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  &__button {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    color: #ff52c1;
+    border: 1px solid #ff52c1;
+    border-radius: 15px;
+    width: 80px;
+    height: 25px;
+    @include responsive(laptop) {
+      width: 140px;
+      height: 40px;
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      border-radius: 20px;
+    }
+  }
+  &__title {
+    color: #00252e;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    @include responsive(laptop) {
+      font-size: 3.65rem;
+    }
+  }
+  &__getstarted {
+    height: 50px;
+    width: 230px;
+    background-color: #ff52c1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+
+    @include responsive(laptop) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1.5rem;
+      font-size: 1.5rem;
+      width: 400px;
+      height: 80px;
+    }
+  }
+
+  &__text {
+    color: #00252e;
+    font-weight: normal;
+    padding: 1.5rem;
+    padding-top: 0;
+    text-align: center;
+
+    @include responsive(laptop) {
+      padding-left: 25%;
+      padding-right: 25%;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 320px;
+    margin-top: 3rem;
+    @include responsive(laptop) {
+      width: 1000px;
+    }
+  }
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
