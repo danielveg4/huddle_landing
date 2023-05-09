@@ -1,11 +1,10 @@
 # Huddle
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://github.com/danielveg4/huddle_landing/blob/main/Captura%20de%20Pantalla%202023-05-09%20a%20las%2016.44.58.png?raw=true)
 
 ## Ejemplo en vivo
 
-- [URL-de-github-pages-de-este-proyecto](URL-de-github-pages-de-este-proyecto)
-- [URL-de-la-api](URL-de-la-api)
+- [URL-de-github-pages-de-este-proyecto](https://danielveg4.github.io/huddle_landing/)
 
 ## Descripción 📑
 
